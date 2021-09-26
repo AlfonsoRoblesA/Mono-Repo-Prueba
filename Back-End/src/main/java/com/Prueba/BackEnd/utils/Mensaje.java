@@ -2,6 +2,7 @@ package com.Prueba.BackEnd.utils;
 
 import java.util.ArrayList;
 
+import com.Prueba.BackEnd.models.PaisModel;
 import com.Prueba.BackEnd.models.UsuarioModel;
 
 public class Mensaje {
@@ -10,8 +11,17 @@ public class Mensaje {
     private boolean error;
     private ArrayList<UsuarioModel> listaUsarios;
     private UsuarioModel usuario;
+    private ArrayList<PaisModel> listaPaises;
 
     public Mensaje() {
+    }
+
+    public ArrayList<PaisModel> getListaPaises() {
+        return listaPaises;
+    }
+
+    public void setListaPaises(ArrayList<PaisModel> listaPaises) {
+        this.listaPaises = listaPaises;
     }
 
     public UsuarioModel getUsuario() {
